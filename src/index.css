@@ -1,53 +1,70 @@
+/* Responsive Design Styles */
+
+/* Base styles */
+body {
+    overflow-y: auto;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Responsive typography */
+h1 {
+    font-size: clamp(1.5rem, 2.5vw + 1rem, 2.5rem);
+}
+h2 {
+    font-size: clamp(1.25rem, 2vw + 0.75rem, 2rem);
+}
+h3 {
+    font-size: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+}
+
+/* Flexible layouts */
 .container {
-  width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
-.header {
-  font-size: 2em;
+/* Touch-friendly button sizing */
+button {
+    padding: 14px 20px;
+    min-width: 44px;
+    font-size: 1rem;
 }
 
-.footer {
-  font-size: 1em;
-  text-align: center;
+/* Mobile-first media queries */
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+	padding: 0.5rem;
+    }
+
+    .container {
+        flex-direction: column;
+    }
 }
 
-/* Mobile Styles */
-@media only screen and (max-width: 600px) {
-  .header {
-    font-size: 1.5em;
-  }
-  .footer {
-    font-size: 0.9em;
-  }
-  .button {
-    padding: 10px 20px;
-    font-size: 1em;
-    width: 100%;
-    border-radius: 5px;
-  }
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
 }
 
-/* Tablet Styles */
-@media only screen and (min-width: 601px) and (max-width: 900px) {
-  .button {
-    width: auto;
-  }
+/* Utilities for responsive spacing and sizing */
+.spacing {
+    margin: 1rem;
+    padding: 1rem;
 }
 
-/* Touch-friendly styles */
-.button {
-  display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #0056b3;
+@media (max-width: 768px) {
+    .spacing {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
 }
