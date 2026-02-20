@@ -101,7 +101,7 @@ function App() {
             <span className="text-2xl font-bold font-mono text-white">${wallet}</span>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl gold-text uppercase tracking-[0.4em] mb-1 font-black">Mangatha Royale</h1>
+            <h1 className="text-3xl gold-text uppercase tracking-[0.4em] mb-1 font-black">Play Mangatha</h1>
             <div className="h-1 w-32 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
           </div>
           <div className="w-32"></div>
