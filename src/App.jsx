@@ -101,7 +101,7 @@ function App() {
             <span className="text-2xl font-bold font-mono text-white">${wallet}</span>
           </div>
           <div className="flex flex-col items-center">
-            <h1 className="text-2xl md:text-3xl gold-text uppercase tracking-[0.2em] md:tracking-[0.4em] mb-1 font-black text-center">Mangatha Royale</h1>
+            <h1 className="text-2xl md:text-3xl gold-text uppercase tracking-[0.2em] md:tracking-[0.4em] mb-1 font-black text-center">Mangatha</h1>
             <div className="h-1 w-32 bg-gradient-to-r from-transparent via-amber-500 to-transparent"></div>
           </div>
           <div className="hidden md:block w-32"></div>
@@ -120,7 +120,7 @@ function App() {
                 onClick={() => phase === 'betting' && setSide('andar')}
                 className={`relative w-full max-w-[220px] glass-panel p-4 md:p-8 flex flex-col items-center gap-2 md:gap-4 cursor-pointer transition-all border-2 ${side === 'andar' ? 'border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.4)] bg-amber-500/10' : 'border-white/10 hover:border-white/30'} ${phase !== 'betting' && side !== 'andar' ? 'opacity-40 grayscale pointer-events-none' : ''}`}
               >
-                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'andar' ? 'text-amber-400' : 'text-slate-400'}`}>Ullae (Inside)</span>
+                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'andar' ? 'text-amber-400' : 'text-slate-400'}`}>Ullae</span>
                 <div className="text-4xl font-black text-white">2x</div>
 
                 {/* Chip Visuals on Bet */}
@@ -218,7 +218,7 @@ function App() {
                 onClick={() => phase === 'betting' && setSide('bahar')}
                 className={`relative w-full max-w-[220px] glass-panel p-4 md:p-8 flex flex-col items-center gap-2 md:gap-4 cursor-pointer transition-all border-2 ${side === 'bahar' ? 'border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.4)] bg-amber-500/10' : 'border-white/10 hover:border-white/30'} ${phase !== 'betting' && side !== 'bahar' ? 'opacity-40 grayscale pointer-events-none' : ''}`}
               >
-                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'bahar' ? 'text-amber-400' : 'text-slate-400'}`}>Veliyae (Outside)</span>
+                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'bahar' ? 'text-amber-400' : 'text-slate-400'}`}>Veliyae</span>
                 <div className="text-4xl font-black text-white">2x</div>
 
                 {/* Chip Visuals on Bet */}
@@ -325,13 +325,13 @@ function App() {
             {winner === side ? (
               <>
                 <Award className="w-24 h-24 text-amber-500" />
-                <h2 className="text-6xl gold-text tracking-tighter uppercase font-black">Royale Win</h2>
+                <h2 className="text-6xl gold-text tracking-tighter uppercase font-black">You Win!</h2>
                 <p className="text-amber-500 font-black text-4xl font-mono tracking-widest">+${bet * 2}</p>
               </>
             ) : (
               <>
                 <AlertCircle className="w-24 h-24 text-red-600" />
-                <h2 className="text-6xl text-red-600 font-black uppercase tracking-tighter">House Wins</h2>
+                <h2 className="text-6xl text-red-600 font-black uppercase tracking-tighter">House Wins!</h2>
                 <p className="text-slate-400 text-xl uppercase tracking-[0.3em] font-bold">Lose: ${bet}</p>
               </>
             )}
