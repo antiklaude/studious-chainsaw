@@ -119,7 +119,7 @@ function App() {
                 onClick={() => phase === 'betting' && setSide('andar')}
                 className={`relative w-full max-w-[220px] glass-panel p-8 flex flex-col items-center gap-4 cursor-pointer transition-all border-2 ${side === 'andar' ? 'border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.4)] bg-amber-500/10' : 'border-white/10 hover:border-white/30'} ${phase !== 'betting' && side !== 'andar' ? 'opacity-40 grayscale pointer-events-none' : ''}`}
               >
-                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'andar' ? 'text-amber-400' : 'text-slate-400'}`}>Ullae (Inside)</span>
+                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'andar' ? 'text-amber-400' : 'text-slate-400'}`}>Ullae</span>
                 <div className="text-4xl font-black text-white">2x</div>
 
                 {/* Chip Visuals on Bet */}
@@ -212,7 +212,7 @@ function App() {
                 onClick={() => phase === 'betting' && setSide('bahar')}
                 className={`relative w-full max-w-[220px] glass-panel p-8 flex flex-col items-center gap-4 cursor-pointer transition-all border-2 ${side === 'bahar' ? 'border-amber-500 shadow-[0_0_30px_rgba(245,158,11,0.4)] bg-amber-500/10' : 'border-white/10 hover:border-white/30'} ${phase !== 'betting' && side !== 'bahar' ? 'opacity-40 grayscale pointer-events-none' : ''}`}
               >
-                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'bahar' ? 'text-amber-400' : 'text-slate-400'}`}>Veliyae (Outside)</span>
+                <span className={`text-xs uppercase tracking-[0.3em] font-bold ${side === 'bahar' ? 'text-amber-400' : 'text-slate-400'}`}>Veliyae</span>
                 <div className="text-4xl font-black text-white">2x</div>
 
                 {/* Chip Visuals on Bet */}
